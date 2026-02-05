@@ -8,7 +8,8 @@ async function getData() {
         const dataSet = data.slice(0, 10)
         const Users = dataSet.map(user => ({ //create an object for multiple data instead of using a string
             name: user.name,
-            email: user.email
+            email: user.email,
+            company: user.company
         }))
         console.log(Users)
 
@@ -23,10 +24,16 @@ async function getData() {
             name.textContent = user.name
             Card.append(name) //add data to div
 
+            //company name element
+            const company = document.createElement("h4")
+            company.textContent = user.company.name
+            Card.append(company) //add data to div
+
             // email element
             const email = document.createElement("p")
             email.textContent = user.email
             Card.append(email) //add data to div
+
 
             //create button
             const button = document.createElement("button")
