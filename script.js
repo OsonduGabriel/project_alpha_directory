@@ -15,12 +15,12 @@ async function getData() {
 
         // DOM manipulation
         Users.forEach((user) => {
-            //create the div
+            //create the div card
             const Card = document.createElement("div")
             Card.classList.add("card") //add class "card" to the div
 
             // name element
-            const name = document.createElement("h3")
+            const name = document.createElement("h2")
             name.textContent = user.name
             Card.append(name) //add data to div
 

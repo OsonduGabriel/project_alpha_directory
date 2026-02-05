@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+/* mobile first design */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
@@ -51,14 +52,42 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 8px;
-    border: 1px solid #d54949;
-    background: linear-gradient(to bottom, #0f0f0f, #250c0c);
-    box-shadow: 0 2px 4px rgba(232, 110, 110, 0.1);
+    border: 1px solid #cf2d2d;
+    background: #0000;
+    box-shadow: 0 2px 4px rgba(237, 230, 230, 0.2);
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
-@media(min-width:650px){
+h2{
+    border-bottom: 0.5px solid #d54949;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+h4{
+    margin-bottom: 0.5rem;
+}
+
+p{
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.btn{
+    font-size: 1rem;
+    color: #fff;
+    background: #f61c1c;
+    border-radius: 1rem;
+    border: #fff;
+    height: 2rem;
+    width:50%;
+    align-self: center;
+}
+
+
+/* for larger screens */
+@media(min-width:650px){ 
     .container{
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
